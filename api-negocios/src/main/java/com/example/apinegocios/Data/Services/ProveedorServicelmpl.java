@@ -23,12 +23,12 @@ public class ProveedorServicelmpl implements ProveedorService {
     }
 
     @Override
-    public void createStudent(Proveedor proveedor) {
+    public void createProveedor(Proveedor proveedor) {
         proveedorDao.save(proveedor);
     }
 
     @Override
-    public void updateStudent(Long id, Proveedor proveedor) {
+    public void updateProveedor(Long id, Proveedor proveedor) {
         if (proveedorDao.existsById(id)) {
             proveedor.setId(id);
             proveedorDao.save(proveedor);
@@ -36,7 +36,7 @@ public class ProveedorServicelmpl implements ProveedorService {
     }
 
     @Override
-    public void deleteStudent(Long id) {
+    public void deleteProveedor(Long id) {
         if (proveedorDao.existsById(id)) {
             proveedorDao.deleteById(id);
         }

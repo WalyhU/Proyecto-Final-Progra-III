@@ -8,7 +8,7 @@ public interface ProveedorService {
 
     public List<Proveedor> findAll();
     public Proveedor findById(Long id);
-    public void createStudent(Proveedor proveedor);
-    public void updateStudent(Long id, Proveedor proveedor);
-    public void deleteStudent(Long id);
+    public void createProveedor(Proveedor proveedor);
+    public void updateProveedor(Long id, Proveedor proveedor);
+    public void deleteProveedor(Long id);
 }
